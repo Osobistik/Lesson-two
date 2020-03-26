@@ -1,0 +1,10 @@
+
+<a routerLink="/">На главную </a>
+<ul>
+  <li *ngFor="let product of products">{{product.title}}
+    <h3>{{product.title}}</h3>
+    <p>{{product.anons}}</p>
+    <span>{{product.price}}рублей</span>
+    <a [routerLink]= "'/view/' + product.id"> Далее</a>
+  </li>
+</ul>
